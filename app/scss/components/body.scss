@@ -53,10 +53,10 @@ textarea,input {
 }
 
 
-::-webkit-input-placeholder {color:#a5a8ab;@include transition(all 0.3s ease);}
-::-moz-placeholder          {color:#a5a8ab;@include transition(all 0.3s ease);}
-:-moz-placeholder           {color:#a5a8ab;@include transition(all 0.3s ease);}
-:-ms-input-placeholder      {color:#a5a8ab;@include transition(all 0.3s ease);}
+::-webkit-input-placeholder {color:#a0a0a0;@include transition(all 0.3s ease);font-weight: 300;}
+::-moz-placeholder          {color:#a0a0a0;@include transition(all 0.3s ease);font-weight: 300;}
+:-moz-placeholder           {color:#a0a0a0;@include transition(all 0.3s ease);font-weight: 300;}
+:-ms-input-placeholder      {color:#a0a0a0;@include transition(all 0.3s ease);font-weight: 300;}
 
 
 

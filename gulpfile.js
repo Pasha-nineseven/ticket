@@ -26,9 +26,10 @@ gulp.task('scripts', function(){
     return gulp.src([
         'app/libs/jquery/dist/jquery.min.js',
         'app/libs/modernizr.min.js',
+        'app/libs/infobubble.min.js',
         'app/libs/slick/slick.min.js',
-        // 'app/libs/formstyler/jquery.formstyler.min.js',
-        // 'app/libs/fancybox/jquery.fancybox.pack.js',
+        'app/libs/formstyler/jquery.formstyler.min.js',
+        
     ])
     .pipe(concat('libs.min.js'))
     .pipe(uglify())
