@@ -1,7 +1,5 @@
 $(document).ready(function() {
-	// $("body").on("click", ".test", function(e){
-	// 	e.preventDefault();
-	// })
+	
 	var $svg = $('.svg-anim').drawsvg();
 	$svg.drawsvg('animate');
 
@@ -61,7 +59,33 @@ $(document).ready(function() {
 	};
 
 
-	initMap();
+	if ($('#map').length>0) {
+		initMap();
+	};
+	
+
+	if ($(".nano").length>0) {
+		$(".nano").nanoScroller();
+	};
+	
+
+	//tickets info TOGGLE
+	$("body").on("click", ".tickets__info-link", function(e){
+		$(this).toggleClass('active');
+		$(this).next('.tickets__info-txt').slideToggle();
+		e.preventDefault();
+	})
+
+	//POPUP-INLINE
+    $('.popup-inline').magnificPopup({
+    	type:'inline',
+    	closeBtnInside: false,
+    	callbacks: {
+		    beforeOpen: function() {
+		       this.st.mainClass = this.st.el.attr('data-effect');
+		    }
+		 },
+    });
 });
 
 
