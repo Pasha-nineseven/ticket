@@ -9,7 +9,7 @@
 		<link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" /> -->
 		<link href="https://fonts.googleapis.com/css?family=Alegreya+Sans:300,400,700" rel="stylesheet">
 		<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
-		<link href="css/libs.css" rel="stylesheet">
+		<link href="css/libs.min.css" rel="stylesheet">
 		<link href="css/style.css" rel="stylesheet">
 		<!--[if lt IE 9]>
 			<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -580,190 +580,158 @@
 					</div>
 					<!-- CONTENT-PART -->
 					<div class="container-fluid">
-						<div class="considered__wrapper">
-							<div class="considered__calendar">
-								<div class="considered__calendar-wrap">
-									<div id="datepicker"></div>
+						<div class="tickets">
+							<div class="tickets__top">
+								<div class="tickets__search">
+									<form action="#" method="post">
+										<input type="text" placeholder="Fast search">
+										<input type="submit">
+									</form>
 								</div>
-								<h4>Similar events</h4>
-								<div class="main-featured__labels">
-									<a href="#" class="main-featured__label green--sqheme">Horse Racing</a>
-									<a href="#" class="main-featured__label yellow--sqheme">Special Events</a>
-									<a href="#" class="main-featured__label green--sqheme">Golf</a>
-									<a href="#" class="main-featured__label yellow--sqheme">Test</a>
-									<a href="#" class="main-featured__label green--sqheme">Test</a>
-									<a href="#" class="main-featured__label green--sqheme">Test</a>
+								<div class="tickets__filter">
+									<form action="#" method="post">
+										<select class="fs">
+											<option>All locations</option>
+											<option>Location 1</option>
+											<option>Location 2</option>
+											<option>Location 3</option>
+										</select>
+									</form>
 								</div>
+								
 							</div>
-							<div class="considered considered--ticket">
-								<a href="#" class="considered__calendar-toggle"><span>Show Calendar</span></a>
-								<h3>December</h3>
-								<div class="considered__list">
-									<div class="considered__item">
-										<div class="considered__left">
-											<div class="considered__date">
-												<strong>14</strong>
-												Dec
-											</div>
-											<div class="considered__title">
-												<a href="#">Swansea City vs Arsenal</a>
-											</div>
+							<div class="tickets__list row">
+								<div class="col-lg-3 col-md-4 col-sm-6 tickets__item">
+									<a href="#" class="tickets__inner">
+										<div class="tickets__img">
+											<div class="tickets__img-inner" style="background:url(img/content/ticket1.jpg)"></div>
 										</div>
-										<div class="considered__info">
-											<div class="considered__info-inner">
-												<div class="considered__info-item">
-													West Bromwich, UK
-												</div>
-												<div class="considered__info-item">
-													The Eithad
-												</div>
-												<div class="considered__info-item">
-													22:30
-												</div>
-												<div class="considered__info-item ">
-													<a href="#" class="btn">Show</a>
-												</div>
-											</div>
+										<div class="tickets__title">21 Pilots Tickets</div>
+										<div class="tickets__events">
+											<span>11</span> Events
 										</div>
-									</div>
-									<div class="considered__item">
-										<div class="considered__left">
-											<div class="considered__date">
-												<strong>14</strong>
-												Dec
-											</div>
-											<div class="considered__title">
-												<a href="#">Swansea City vs Arsenal</a>
-											</div>
-										</div>
-										<div class="considered__info">
-											<div class="considered__info-inner">
-												<div class="considered__info-item">
-													West Bromwich, UK
-												</div>
-												<div class="considered__info-item">
-													The Eithad
-												</div>
-												<div class="considered__info-item">
-													22:30
-												</div>
-												<div class="considered__info-item ">
-													<a href="#" class="btn">Show</a>
-												</div>
-											</div>
-										</div>
-									</div>
+									</a>
 								</div>
-								<h3>January</h3>
-								<div class="considered__list">
-									<div class="considered__item">
-										<div class="considered__left">
-											<div class="considered__date">
-												<strong>14</strong>
-												Dec
-											</div>
-											<div class="considered__title">
-												<a href="#">Swansea City vs Arsenal</a>
-											</div>
+								<div class="col-lg-3 col-md-4 col-sm-6 tickets__item">
+									<a href="#" class="tickets__inner">
+										<div class="tickets__img">
+											<div class="tickets__img-inner" style="background:url(img/content/ticket2.jpg)"></div>
 										</div>
-										<div class="considered__info">
-											<div class="considered__info-inner">
-												<div class="considered__info-item">
-													West Bromwich, UK
-												</div>
-												<div class="considered__info-item">
-													The Eithad
-												</div>
-												<div class="considered__info-item">
-													22:30
-												</div>
-												<div class="considered__info-item ">
-													<a href="#" class="btn">Show</a>
-												</div>
-											</div>
+										<div class="tickets__title">AC/DC Tickets</div>
+										<div class="tickets__events">
+											<span>23</span> Events
 										</div>
-									</div>
-									<div class="considered__item">
-										<div class="considered__left">
-											<div class="considered__date">
-												<strong>14</strong>
-												Dec
-											</div>
-											<div class="considered__title">
-												<a href="#">Swansea City vs Arsenal</a>
-											</div>
+									</a>
+								</div>
+								<div class="col-lg-3 col-md-4 col-sm-6 tickets__item">
+									<a href="#" class="tickets__inner">
+										<div class="tickets__img">
+											<div class="tickets__img-inner" style="background:url(img/content/ticket3.jpg)"></div>
 										</div>
-										<div class="considered__info">
-											<div class="considered__info-inner">
-												<div class="considered__info-item">
-													West Bromwich, UK
-												</div>
-												<div class="considered__info-item">
-													The Eithad
-												</div>
-												<div class="considered__info-item">
-													22:30
-												</div>
-												<div class="considered__info-item ">
-													<a href="#" class="btn">Show</a>
-												</div>
-											</div>
+										<div class="tickets__title">Alan Parsons Live Project Tickets</div>
+										<div class="tickets__events">
+											<span>10</span> Events
 										</div>
-									</div>
-									<div class="considered__item">
-										<div class="considered__left">
-											<div class="considered__date">
-												<strong>14</strong>
-												Dec
-											</div>
-											<div class="considered__title">
-												<a href="#">Swansea City vs Arsenal</a>
-											</div>
+									</a>
+								</div>
+								<div class="col-lg-3 col-md-4 col-sm-6 tickets__item">
+									<a href="#" class="tickets__inner">
+										<div class="tickets__img">
+											<div class="tickets__img-inner" style="background:url(img/content/ticket4.jpg)"></div>
 										</div>
-										<div class="considered__info">
-											<div class="considered__info-inner">
-												<div class="considered__info-item">
-													West Bromwich, UK
-												</div>
-												<div class="considered__info-item">
-													The Eithad
-												</div>
-												<div class="considered__info-item">
-													22:30
-												</div>
-												<div class="considered__info-item ">
-													<a href="#" class="btn">Show</a>
-												</div>
-											</div>
+										<div class="tickets__title">Anna Netrebko Tickets</div>
+										<div class="tickets__events">
+											<span>1</span> Event
 										</div>
-									</div>
-									<div class="considered__item">
-										<div class="considered__left">
-											<div class="considered__date">
-												<strong>14</strong>
-												Dec
-											</div>
-											<div class="considered__title">
-												<a href="#">Swansea City vs Arsenal</a>
-											</div>
+									</a>
+								</div>
+								<div class="col-lg-3 col-md-4 col-sm-6 tickets__item">
+									<a href="#" class="tickets__inner">
+										<div class="tickets__img">
+											<div class="tickets__img-inner" style="background:url(img/content/ticket1.jpg)"></div>
 										</div>
-										<div class="considered__info">
-											<div class="considered__info-inner">
-												<div class="considered__info-item">
-													West Bromwich, UK
-												</div>
-												<div class="considered__info-item">
-													The Eithad
-												</div>
-												<div class="considered__info-item">
-													22:30
-												</div>
-												<div class="considered__info-item ">
-													<a href="#" class="btn">Show</a>
-												</div>
-											</div>
+										<div class="tickets__title">21 Pilots Tickets</div>
+										<div class="tickets__events">
+											<span>11</span> Events
 										</div>
-									</div>
+									</a>
+								</div>
+								<div class="col-lg-3 col-md-4 col-sm-6 tickets__item">
+									<a href="#" class="tickets__inner">
+										<div class="tickets__img">
+											<div class="tickets__img-inner" style="background:url(img/content/ticket2.jpg)"></div>
+										</div>
+										<div class="tickets__title">AC/DC Tickets</div>
+										<div class="tickets__events">
+											<span>23</span> Events
+										</div>
+									</a>
+								</div>
+								<div class="col-lg-3 col-md-4 col-sm-6 tickets__item">
+									<a href="#" class="tickets__inner">
+										<div class="tickets__img">
+											<div class="tickets__img-inner" style="background:url(img/content/ticket3.jpg)"></div>
+										</div>
+										<div class="tickets__title">Alan Parsons Live Project Tickets</div>
+										<div class="tickets__events">
+											<span>10</span> Events
+										</div>
+									</a>
+								</div>
+								<div class="col-lg-3 col-md-4 col-sm-6 tickets__item">
+									<a href="#" class="tickets__inner">
+										<div class="tickets__img">
+											<div class="tickets__img-inner" style="background:url(img/content/ticket4.jpg)"></div>
+										</div>
+										<div class="tickets__title">Anna Netrebko Tickets</div>
+										<div class="tickets__events">
+											<span>1</span> Event
+										</div>
+									</a>
+								</div>
+								<div class="col-lg-3 col-md-4 col-sm-6 tickets__item">
+									<a href="#" class="tickets__inner">
+										<div class="tickets__img">
+											<div class="tickets__img-inner" style="background:url(img/content/ticket1.jpg)"></div>
+										</div>
+										<div class="tickets__title">21 Pilots Tickets</div>
+										<div class="tickets__events">
+											<span>11</span> Events
+										</div>
+									</a>
+								</div>
+								<div class="col-lg-3 col-md-4 col-sm-6 tickets__item">
+									<a href="#" class="tickets__inner">
+										<div class="tickets__img">
+											<div class="tickets__img-inner" style="background:url(img/content/ticket2.jpg)"></div>
+										</div>
+										<div class="tickets__title">AC/DC Tickets</div>
+										<div class="tickets__events">
+											<span>23</span> Events
+										</div>
+									</a>
+								</div>
+								<div class="col-lg-3 col-md-4 col-sm-6 tickets__item">
+									<a href="#" class="tickets__inner">
+										<div class="tickets__img">
+											<div class="tickets__img-inner" style="background:url(img/content/ticket3.jpg)"></div>
+										</div>
+										<div class="tickets__title">Alan Parsons Live Project Tickets</div>
+										<div class="tickets__events">
+											<span>10</span> Events
+										</div>
+									</a>
+								</div>
+								<div class="col-lg-3 col-md-4 col-sm-6 tickets__item">
+									<a href="#" class="tickets__inner">
+										<div class="tickets__img">
+											<div class="tickets__img-inner" style="background:url(img/content/ticket4.jpg)"></div>
+										</div>
+										<div class="tickets__title">Anna Netrebko Tickets</div>
+										<div class="tickets__events">
+											<span>1</span> Event
+										</div>
+									</a>
 								</div>
 							</div>
 						</div>

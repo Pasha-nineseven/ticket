@@ -29,7 +29,9 @@ gulp.task('scripts', function(){
         'app/libs/infobubble.min.js',
         'app/libs/slick/slick.min.js',
         'app/libs/formstyler/jquery.formstyler.min.js',
-        
+        'app/libs/infobubble/infobubble.min.js',
+        'app/libs/magnific/jquery.magnific-popup.js',
+        'app/libs/nanoscroller/nanoscroller.js',
     ])
     .pipe(concat('libs.min.js'))
     .pipe(uglify())
