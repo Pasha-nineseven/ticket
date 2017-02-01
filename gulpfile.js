@@ -25,6 +25,7 @@ gulp.task('sass', function(){
 gulp.task('scripts', function(){
     return gulp.src([
         'app/libs/jquery/dist/jquery.min.js',
+        'app/libs/jquery-ui/jquery-ui.min.js',
         'app/libs/modernizr.min.js',
         'app/libs/infobubble.min.js',
         'app/libs/slick/slick.min.js',
@@ -42,6 +43,7 @@ gulp.task('css-libs', ['sass'], function() {
     return gulp.src('app/css/libs.css')
         .pipe(cssnano())
         .pipe(rename({suffix: '.min'}))
+        .pipe(gulp.dest('app/css'))
         .pipe(gulp.dest('dist/css'));
 });
 

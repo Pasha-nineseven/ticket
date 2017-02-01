@@ -882,7 +882,13 @@ input[type="submit"] {
   -webkit-border-radius: 5px;
           border-radius: 5px;
   text-align: center;
-  padding: 0 35px; }
+  padding: 0 35px;
+  -webkit-transition: background 0.3s ease;
+  transition: background 0.3s ease; }
+  input[type="submit"]:hover {
+    background: #ffea5a; }
+  input[type="submit"]:active {
+    background: #eed219; }
 
 input[type="reset"] {
   background: transparent;
@@ -904,6 +910,8 @@ input[type="reset"] {
   .btn:hover {
     text-decoration: none;
     background: #f8dd28; }
+  .btn:active {
+    background: #eed219; }
 
 .send-link {
   position: fixed;
@@ -1633,7 +1641,7 @@ input[type="reset"] {
     -webkit-transition: all 0.3s ease;
     transition: all 0.3s ease; }
   .main-top-event__inner:hover:after {
-    opacity: 1; }
+    opacity: 0.7; }
 
 .main-top-event__info {
   position: absolute;
@@ -2369,6 +2377,10 @@ a.breadcrumbs__item:after {
     background: #f8dd28;
     padding: 10px 50px;
     font-size: 22px; }
+    .buy__item-in .btn:hover {
+      background: #ffea5a; }
+    .buy__item-in .btn:active {
+      background: #eed219; }
 
 .buy__item-price {
   font-weight: 700;
@@ -2485,7 +2497,7 @@ a.breadcrumbs__item:after {
     position: relative;
     z-index: 5; }
   .tickets__view:hover:after {
-    opacity: 1; }
+    opacity: 0.7; }
 
 .tickets__info-item {
   margin-bottom: 17px; }
@@ -2584,6 +2596,8 @@ a.breadcrumbs__item:after {
 
 .popup-send__form input[type="reset"] {
   font-size: 22px; }
+  .popup-send__form input[type="reset"]:hover {
+    text-decoration: underline; }
 
 .input-wrap {
   margin-bottom: 20px; }
