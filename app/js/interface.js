@@ -238,6 +238,17 @@ $(document).ready(function() {
             $(this).find('span').text("Show Calendar");
         }
 	})
+
+	//SCROLL-LINK
+	$("body").on("click",".link-scroll", function (event) {
+        event.preventDefault();
+        var id  = $(this).attr('href'),
+        top = $(id).offset().top;
+        if ($(window).width() > 851){
+	  		$('body,html').animate({scrollTop: top - 100}, 1000);
+	  	}
+	  	else $('body,html').animate({scrollTop: top - 60}, 1000);
+    });
 });
 
 
