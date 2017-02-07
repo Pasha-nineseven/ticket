@@ -2446,7 +2446,8 @@ a.breadcrumbs__item:after {
     margin-bottom: 0; }
 
 .buy__list-inner {
-  height: 505px; }
+  height: 505px;
+  overflow: hidden; }
 
 .buy__list-scroller {
   width: 100%; }
@@ -2468,11 +2469,18 @@ a.breadcrumbs__item:after {
   .buy__item-in .btn {
     background: #f8dd28;
     padding: 10px 50px;
-    font-size: 22px; }
+    font-size: 22px;
+    font-weight: 100; }
     .buy__item-in .btn:hover {
       background: #ffea5a; }
     .buy__item-in .btn:active {
       background: #eed219; }
+  .buy__item-in .btn--sec {
+    background: #2898c6;
+    color: #fff;
+    padding: 10px 33px; }
+    .buy__item-in .btn--sec:hover {
+      background: #5fa2bd; }
 
 .buy__item-price {
   font-weight: 700;
@@ -2515,9 +2523,9 @@ a.breadcrumbs__item:after {
   overflow: scroll;
   overflow-x: hidden;
   top: 0;
-  right: 0 !important;
   bottom: 0;
-  left: 0; }
+  left: 0;
+  padding-right: 17px; }
 
 .nano > .nano-content:focus {
   outline: thin dotted; }
@@ -2982,11 +2990,13 @@ _::-webkit-:host:not(:root:root), .main-featured__slider .slick-track {
 _::-webkit-:host:not(:root:root), .main-popular-events__slider .slick-track {
   display: block; }
 
-_::-webkit-:host:not(:root:root), .col-lg-3 {
-  width: 24.9%; }
+@media (min-width: 768px) {
+  _::-webkit-:host:not(:root:root), .col-md-4 {
+    width: 33.233%; } }
 
-_::-webkit-:host:not(:root:root), .col-md-4 {
-  width: 33.233%; }
+@media (min-width: 992px) {
+  _::-webkit-:host:not(:root:root), .col-lg-3 {
+    width: 24.9%; } }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 0) {
   ::i-block-chrome, input[type="text"] {

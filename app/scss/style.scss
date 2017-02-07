@@ -1929,6 +1929,7 @@ a.breadcrumbs__item{
 
 .buy__list-inner{
 	height: 505px;
+	overflow: hidden;
 }
 
 .buy__list-scroller{
@@ -1955,11 +1956,20 @@ a.breadcrumbs__item{
 		background: #f8dd28;
 		padding: 10px 50px;
 		font-size: 22px;
+		font-weight: 100;
 		&:hover{
 			background: #ffea5a;
 		}
 		&:active{
 			background: #eed219;
+		}
+	}
+	.btn--sec{
+		background: #2898c6;
+		color: #fff;
+		    padding: 10px 33px;
+		&:hover{
+			background: #5fa2bd;
 		}
 	}
 }
@@ -2014,9 +2024,9 @@ a.breadcrumbs__item{
   overflow      : scroll;
   overflow-x    : hidden;
   top           : 0;
-  right         : 0!important;
   bottom        : 0;
   left          : 0;
+  padding-right: 17px;
 }
 .nano > .nano-content:focus {
   outline: thin dotted;
@@ -2546,6 +2556,7 @@ a.breadcrumbs__item{
 }
 
 
+
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {  
    .categories-link{
 		&:hover{
@@ -2568,9 +2579,14 @@ _::-webkit-:host:not(:root:root), input[type="email"] { line-height: inherit !im
 _::-webkit-:host:not(:root:root), .main-featured__slider .slick-track{display: block;}
 _::-webkit-:host:not(:root:root), .main-popular-events__slider .slick-track{display: block;}
 
-_::-webkit-:host:not(:root:root), .col-lg-3 {width: 24.9%;}
-_::-webkit-:host:not(:root:root), .col-md-4 {width: 33.233%;}
 
+@media (min-width: 768px){
+	_::-webkit-:host:not(:root:root), .col-md-4 {width: 33.233%;}
+}
+
+@media (min-width: 992px){
+	_::-webkit-:host:not(:root:root), .col-lg-3 {width: 24.9%;}
+}
 
 
 @media only screen and (-webkit-min-device-pixel-ratio: 0) { 
