@@ -1,13 +1,4 @@
 $(document).ready(function() {
-	
-	// var $svg = $('.svg-anim').drawsvg();
-	
-	// $("body").on("mouseover", ".categories-link", function(e){
-	// 	e.preventDefault();
-	// 	//$(this).find('.svg-anim');
-	// 	$svg.drawsvg('animate');
-		
-	// })
 
 	//MAIN-TOP-SLIDER
 	if ($('.main-top__slider').length>0) {

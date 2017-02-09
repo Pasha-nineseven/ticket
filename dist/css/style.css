@@ -3026,6 +3026,10 @@ _::-webkit-:host:not(:root:root), .main-popular-events__slider .slick-track {
   .main-services__slider .slick-prev {
     left: 0; } }
 
+@media screen and (max-width: 1400px) {
+  .send-link {
+    top: 120px; } }
+
 @media screen and (max-width: 1300px) {
   .container-fluid {
     padding: 0 20px; }
@@ -3055,8 +3059,6 @@ _::-webkit-:host:not(:root:root), .main-popular-events__slider .slick-track {
     margin-bottom: 4px; }
   .page-header__info {
     margin-top: 7px; }
-  .send-link {
-    top: 120px; }
   .tickets__info-link {
     font-size: 22px; }
   .buy__item-title {
